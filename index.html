@@ -1,13 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="app">   
+    <header> <!--Encabezado-->
+    <img class="Logo" src="Assets/AmTiendaLogo.jpg" alt="Logo de Am">   <!--Imagen/logotipo del encabezado -->
+    <h1> Tienda De <span>AM</span> </h1>
+    </header>
     
+    <nav class="app_nav"> <!-- Barra de navegacion -->
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">Blusas</a></li>
+            <li><a href="#">Camisetas</a></li>
+            <li><a href="#">Camisas</a></li>
+            <li><a href="#">Pantalones</a></li>
+        </ul>
+    </nav>
+    
+    <main><!-- Contenido principal de la pagina -->
+       
+        <aside>  <!-- Barra lateral para el formulario -->
+        <div class="content_aside">
+            <section>
+                <h2>Mi Carrito</h2>
+                <ul>
+                    <li><span class="data">Productos</span> <span class="bold"> 0</span></li>
+                    <li><span class="data">Total</span> <span class="bold"> 0$</span></li>
+                    <li><a href="#">Ver el Carrito</a></li>
+                </ul>
 
-    <h1> Tienda Expample</h1>
+            </section>
+
+            <form action="sumbit">
+                <h2>Entrar a la web</h2>
+                
+                   <fieldset>  <legend>Correo</legend>
+                    <input type="email" placeholder="example@gmail.com"> 
+                   </fieldset>
+                       
+                    <fieldset> <legend>Contraseña</legend>
+                        <input type="password">
+                    </fieldset>
+                     
+                <input type="submit">
+
+            </form>
+        </div>
+        </aside>
+
+        <section class="contenido" > <!--Seccion para el contenido del "Carrito"-->
+            <h3>Algunos de nuestros productos</h3>
+            <hr>
+
+        </section>
+
+
+    </main>
+
+    <footer> <!--Pie de Pagina-->
+
+        <p> Desarrollado por AM. Juan Moya &copy; 2024  </p>
+
+        
+    </footer>
+
+
+
+</div>
+
 </body>
 </html>
