@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: black;
+background-color: rgb(215, 231, 250);  
 }
 
 
@@ -19,7 +19,7 @@ body{
 
     background-color: rgb(215, 231, 250);
     margin: 3px;
-    height: 680px;
+    height: 745px;
     border-radius: 5px;
     
 }
@@ -195,6 +195,8 @@ footer{
 main{
 
     display: flex;
+    height: 100%;
+
 }
 
 .contenido{
