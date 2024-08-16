@@ -9,7 +9,8 @@
 }
 
 body{
-background-color: rgb(215, 231, 250);  
+background-color: rgb(0, 0, 0); 
+
 }
 
 
@@ -19,7 +20,7 @@ background-color: rgb(215, 231, 250);
 
     background-color: rgb(215, 231, 250);
     margin: 3px;
-    height: 745px;
+    height: 100%;
     border-radius: 5px;
     
 }
@@ -29,7 +30,7 @@ header{
     display: flex;
     background-color: rgb(233, 238, 243);
     width: 100%;
-    height: 110px;
+    height: 100px;
     margin: auto;
     text-align: center;
     align-items: center;
@@ -97,7 +98,7 @@ h1 span{
 
 aside{
     width: 30%;
-    height: 500px;
+    /* height: 98vh; */
     background-color: rgb(215, 231, 250);
     border-right: 7px solid  rgb(99, 120, 146);
     padding-top: 10px;
@@ -105,17 +106,39 @@ aside{
 
 .content_aside{
 
-    background-color: rgb(200, 217, 231);
+    background-color: rgb(164, 190, 211);
     margin: auto;
     width: 90%;
-    height: 95%;
+    height: 85%;
     border-radius: 1em;
-    padding-top: 20px;
-    
+    padding-top: 20px;   
 }
+
+.Link_register{
+    color: rgb(92, 107, 116);
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;    
+}
+
+.Link_register:hover , .link_carrito:hover{
+    color: rgb(72, 120, 252);
+}
+
+.link_carrito{
+    color: rgb(92, 107, 116);
+}
+
+form hr{
+    width: 250px;
+    opacity: 0.7;
+}
+
+
 
 section{
     margin: 5px;
+    
 }
 section ul{
     padding: 0 5px ;
@@ -185,7 +208,7 @@ footer{
     background-color: rgb(6, 14, 19);
     color: aliceblue;
     text-align: center;
-    height: 50px;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,13 +218,13 @@ footer{
 main{
 
     display: flex;
-    height: 100%;
+    height: 100vh;
 
 }
 
 .contenido{
 width: 100%;
-
+height: 98vh;
 }
 
 .contenido h3{
