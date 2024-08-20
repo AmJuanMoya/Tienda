@@ -38,8 +38,8 @@
                 </ul>
 
             </section>
-
-            <form action="sumbit">
+            
+            <form action="sumbit">     <!-- Formulario.... -->
                 <h2>Entrar a la web</h2>
                 
                    <fieldset>  <legend>Correo</legend>
@@ -72,7 +72,7 @@
 
     <footer> <!--Pie de Pagina-->
 
-        <p> Desarrollado por AM. Juan Moya &copy; 2024  </p>
+        <p> Desarrollado por AM. Juan Moya &copy; <?= date("Y") ?> </p>
 
         
     </footer>
