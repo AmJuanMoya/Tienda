@@ -191,10 +191,12 @@ form{
 fieldset{
     padding: 5px 0;
     border: none;
-    margin: 5px 0;
+    margin: 5px 10px;
 }
 
-fieldset input{
+input[type="text"],
+input[type="password"],
+input[type="email"]{
     width: 90%;
     height: 20px;
     border-radius: 2px;
@@ -202,14 +204,60 @@ fieldset input{
 }
 
 
+
 input[type="submit"]{
 
-    background-color: rgb(99, 120, 146);
+    background-color: rgb(19, 97, 205);
     border: 1px solid gray;
     width: 70px;
     height: 25px;
     color: rgb(193, 226, 255);
+    cursor: pointer;
+    margin: 5px 10px;
 }
+
+
+.menu_ul{
+
+    margin-top: 10px;
+}
+
+.link_menu{
+
+    list-style: none;
+
+    
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    border-left: 3px solid rgb(11, 76, 155);
+    margin:  5px 10px;
+    font-size: large;
+    padding-left: 5px;
+
+}
+
+.link_menu a{
+    color: rgb(55, 65, 70);
+    text-decoration: none;
+    transition: 0.5s ease-in;
+    
+    width: 100%;
+
+}
+
+
+.link_menu a:hover{
+
+    font-size: 19px;
+}
+
+.link_menu:hover{
+
+    background-color: rgb(119, 137, 147);
+}
+
+
 h2{
     width: 100%;
     text-align: center;

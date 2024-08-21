@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link  href="/Assets/AmTiendaLogo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/Favicon.jpg">
 
     <title>Tienda</title>
 </head>
@@ -56,6 +57,19 @@
                     <a class="Link_register" href="#">Registrate aqui</a>
                     <hr>
                 </div>
+
+                <div>
+                    <ul class="menu_ul">
+                        <li class="link_menu"><a href="#">Mis Pedidos </a></li>
+                        <li class="link_menu"><a href="#">Gestionar Pedidos </a></li>
+                        <li class="link_menu"><a href="#">Gestionar Categorias </a></li>
+                    </ul>
+
+
+                </div>
+
+
+
 
             </form>
         </div>
