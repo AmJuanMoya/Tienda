@@ -90,4 +90,24 @@ class Pedido{
         $this->hora = $hora;
     }
 
+
+
+
+    public function save(){
+
+        $sql = "INSERT INTO t_pedidos VALUES(NULL, '{$this->getUsuarioId}', '{$this->getCiudad}' '{$this->getDireccion}', '{$this->getCosto},'confirm', CURDATE(), CURDTIME() ); "
+        //var_dump($sql);
+        //die();
+        $save = $this->db->query($sql);
+       
+        $result = false;
+        if($save){
+            $result = true;
+        }
+        return $result;
+
+    }
+
+
+
 }

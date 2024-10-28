@@ -16,7 +16,7 @@
                     <?php endif; ?>
                     <h2><?=$product->nombre_producto?></h2>
                     <p><?=$product->precio?></p>
-                    <a href="#" class="button">Comprar</a>
+                    <a href="<?=base_url?>carrito/add&id=<?=$product->id_producto?>" class="button">Comprar</a>
                 </a>
             </div>
         <?php endwhile; ?>

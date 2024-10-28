@@ -1,9 +1,11 @@
 <?php
 
+require_once 'models/pedido.php';
+
 class pedidoController{
 
     public function hacer(){
-        require_once 'views/pedido/hacer.php'
+        require_once 'views/pedido/hacer.php';
 
     }
 
@@ -11,18 +13,38 @@ class pedidoController{
     
     public function add(){
         if (isset($_SESSION['identity'])) {
-            $ciudad = isset($_POST['ciudad']) ? $_POST['ciudad']:false;
-            $direccon = isset($_POST['direccion']) ?  $_POST['direccion']:false;
 
+            //var_dump($_SESSION);
+            //die();
+
+            $usuarioId = $_SESSION['identity']->id_usuario;
+            $ciudad = isset($_POST['ciudad']) ? $_POST['ciudad']:false;
+            $direccion = isset($_POST['direccion']) ?  $_POST['direccion']:false;
+            $stats = Utils::stadisticCarrito();
+            $costo = $stats['total'];
+
+           
             if($ciudad &&  $direccion ){
                 $pedido = new Pedido();
-                $usuario = $_SESSION['identity']->id_usuario;
+                
+                $pedido->setUsuarioId($usuarioId);
+                $pedido->setCiudad($ciudad);
+                $pedido->setDireccion($direccion);
+                $pedido->setCosto($costo);
+                
 
-                //var_dump();
+                $save = $pedido->save();
+
+                if($save){
+                    $_SESSION['pedido'] = 'complete';
+                }else{
+                    $_SESSION['pedido'] = 'failed';
+                }
+ 
             }
 
 
-
+        }
     }
 
 

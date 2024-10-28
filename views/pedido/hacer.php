@@ -20,7 +20,7 @@ if(isset($_SESSION['identity'])):?>
     <input type="text" name="ciudad" require>
 
     <label for="direccion">dirección</label>
-    <input type="text" name="ciudad" require>
+    <input type="text" name="direccion" require>
 
     <input type="submit" value="confirmar">
 

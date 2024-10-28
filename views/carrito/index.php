@@ -40,7 +40,7 @@
 <div class="tot">
 
 <h3>Precio total:$ <?=$stats['total']?></h3>
-<a href="<?=base_url?>/pedido/index" class="button">Hacer pedido</a>
+<a href= "<?=base_url?>pedido/hacer" class="button">Hacer pedido</a>
 
 </div>
 
