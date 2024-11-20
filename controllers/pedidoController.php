@@ -132,6 +132,9 @@ class pedidoController{
             $id = $_POST['pedido_id'];
             $estado = $_POST['estado'];
 
+            // var_dump($_POST);
+            // die();
+
             $pedido = new Pedido();
             $pedido->setId($id);
             $pedido->setEstado($estado);

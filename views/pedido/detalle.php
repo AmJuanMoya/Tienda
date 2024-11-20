@@ -10,6 +10,7 @@
     <form action="<?=base_url?>Pedido/estado" method="POST">
         <input type="hidden" value="<?=$pedido->id_pedido?>" name="pedido_id" />
         <select name="estado" id="">
+            <option value="<?=$pedido->estado?>"><?=Utils::showStatus($pedido->estado) ?></option>
             <option value="confirm">Pendiente</option>
             <option value="preparation">En preparacion</option>
             <option value="ready">Listo para enviar</option>
@@ -27,13 +28,13 @@
     
     <h3>Datos del pedido</h3>
 
-    Estado:<?=$pedido->estado?> <br/>
+    Estado:  <?=Utils::showStatus($pedido->estado)  ?> <br/>
     Número del pedido: <?=$pedido->id_pedido?> <br/>
     Total a pagar:<?=$pedido->costo?> <br/>
     <br/>
     Productos:
     <br/>
-    <table>
+    <table id="tabla_gestion">
     <tr>
         <th>Imagen</th>
         <th>Nombre</th>
@@ -68,3 +69,6 @@
 </table>
 
 <?php endif; ?>
+
+
+

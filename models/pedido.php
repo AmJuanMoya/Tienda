@@ -147,7 +147,7 @@ class Pedido{
 
     public function edit(){
 		$sql = "UPDATE t_pedidos SET estado='{$this->getEstado()}' ";
-		$sql .= " WHERE id_pedido={$this->getid};";
+		$sql .= " WHERE id_pedido={$this->getid()};";
 
 		$save = $this->db->query($sql);
 		
