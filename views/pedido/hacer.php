@@ -1,38 +1,27 @@
+<?php if(isset($_SESSION['identity'])): ?>
 
+    <h1>Hacer pedido</h1>
+    <p>
+        <a href="<?=base_url?>carrito/index">Ver productos y precio del pedido</a>
+    </p>
+    <br/>
+    
+    <h3> Direccion para el envio:</h3>
+    <form action="<?=base_url.'pedido/add'?>" method="POST">
 
+        <label for="ciudad">Ciudad</label>
+        <input type="text" name="ciudad" required/>
 
-<?php
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" required/>
 
-
-if(isset($_SESSION['identity'])):?>
-
-<h1> Hacer pedido</h1>
-
-
-<p>
-    <a href="<?=base_url?>carrito/index">Ver productos del Pedido</a>
-    <br>
-
-    <h3>Direccion de Envio</h3>
-    <form action="<?=base_url.'pedido/add'?>" method="POST" >
-
-    <label for="ciudad">Ciudad</label>
-    <input type="text" name="ciudad" require>
-
-    <label for="direccion">dirección</label>
-    <input type="text" name="direccion" require>
-
-    <input type="submit" value="confirmar">
+        <input type="submit" value="confirmar" required/>
 
     </form>
 
 
-</p>
+<?php else: ?>
+    <h1>Necesitas estar identificado</h1>
+    <p>Necesitar estar logueado en la web para poder realizar pedidos</p>
 
-<?php else :?>
-
-    <h1>Necesita estar identificado</h1>
-    <p>Nececitas Iniciar sesion para poder hacer un pedido</p>
-
-    
-<?php endif ;?>
+<?php endif;?>

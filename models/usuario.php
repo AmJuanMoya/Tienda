@@ -102,8 +102,6 @@ class Usuario{
         $email = $this->email;
         $password = $this->password;
 
-
-
         //comprobar si existe el usuario
         $sql = "SELECT * FROM t_usuarios WHERE email = '$email'";
         $login = $this->db->query($sql);
@@ -113,15 +111,11 @@ class Usuario{
 
             //verificar la contraseña
             $verify = password_verify($password, $usuario->password);
-
-      
+     
             if($verify){
                 $result = $usuario;
             }
-
         }
         return $result;
-
     }
-
 }

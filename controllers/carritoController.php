@@ -10,7 +10,6 @@ class carritoController{
         $carrito = $_SESSION['carrito'];
 
         require_once 'views/carrito/index.php';
-        
     }
 
     public function add(){
@@ -59,6 +58,8 @@ class carritoController{
         header('Location:'.base_url."carrito/index");
 
     }
+
+
 
     public function remove(){
     

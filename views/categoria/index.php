@@ -10,10 +10,9 @@
         <tr>
             <th>ID</th>
             <th>CATEGORIA</th>
-            <th>ACCIONES</th>
+            <th>           ACCIONES</th>
         </tr>   
-        <?php while($cat = $categorias->fetch_object()):   ?>
-
+        <?php while($cat = $categorias->fetch_object()): ?>
             <tr>
 
                 <td><?=$cat->id_categoria;?></td>

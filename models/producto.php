@@ -136,7 +136,7 @@ class Producto{
 
 
     public function edit(){
-		$sql = "UPDATE t_productos SET nombre='{$this->getNombre()}', descripcion='{$this->getDescripcion()}', precio={$this->getPrecio()}, stock={$this->getStock()},  oferta='{$this->getOferta()}',id_categoria={$this->getIdCategoria()}  ";
+		$sql = "UPDATE t_productos SET nombre_producto='{$this->getNombre()}', descripcion='{$this->getDescripcion()}', precio={$this->getPrecio()}, stock={$this->getStock()},  oferta='{$this->getOferta()}',id_categoria={$this->getIdCategoria()}  ";
 		
 		if($this->getImagen() != null){
 			$sql .= ", imagen='{$this->getImagen()}'";

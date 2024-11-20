@@ -1,0 +1,66 @@
+GestionDeProductos
+1) producto controller
+	crear function gestion
+2) views crear carpeta producto 
+	crear archivo gestion.php (<h1>Gestion de Productos</h1>
+3)sidebar
+	coloca el enlace correspondiente
+4)hacer el modelo para productos
+	crear la function getAll()
+	crear el gestion... luego lo usamos en controller
+5)Producto Controller
+	agregar el require_one 'models/producto.php'
+	<?php
+
+	require_once 'models/producto.php';
+
+	class productoController{
+
+	public function index(){
+
+	       //renderizadion de una vista 
+		require_once 'views/producto/destacados.php';
+	}
+
+	public function gestion(){
+	       	Utils::isAdmin();
+
+	        $producto = new Producto();
+        	$productos = $producto->getAll();
+
+	        require_once 'views/producto/gestion.php';
+    	}
+
+}
+
+6) en gestion.php..
+	igual que en categoria/index
+	<h1>Gestion de productos</h1>
+
+	<a href="<?=base_url?>producto/crear" class="button button-small">
+    	Crear producto
+	</a>
+
+	<table>
+    		<tr>
+	...
+
+CREAR PRODUCTO
+
+1) en productocontroller
+	hacer una function llamada crear()
+2) en vistas crear la pagina de crear
+	Inicialmente con  <h1>Crear productos nuevos</h1>
+	luego creamos el formulario
+3) terminar el formulario 
+4) en el productocontroler ... completamos el metodo save
+	var_dump()
+
+
+GUARDAR PRODUCTO
+1) como en todos los modelos debemos modificar el modelo producto
+	para crear el save... copiamos el save de usuario(por ejemplo)
+2) el metodo save...hace el insert
+
+
+

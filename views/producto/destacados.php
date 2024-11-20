@@ -6,13 +6,11 @@
             <?php if($product->imagen != null): ?>
                 <img src="<?=base_url?>uploads/images/<?=$product->imagen?>" />
             <?php else: ?>
-                <img src="<?=base_url?>assets/img/Manzana-A1.png" />
+                <img src="<?=base_url?>assets/img/ferretaria.PNG" />
             <?php endif; ?>
             <h2><?=$product->nombre_producto?></h2>
             <p><?=$product->precio?></p>
-            <a href="#" class="button">Comprar</a>
+            <a href="<?=base_url?>carrito/add&id=<?=$product->id_producto?>" class="button">Comprar</a>
         </a>
     </div>
 <?php endwhile; ?>
-
-

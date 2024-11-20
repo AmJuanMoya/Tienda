@@ -1,0 +1,10 @@
+Notas40_GestionCategorias
+
+1- views/categoria/index.php
+	crear nueva columna acciones
+	crear los link para las acciones eliminar-editar
+2- crear los stilos
+3- apuntar los link a controlador producto/editar y borrar
+4- en modelo categoria crear el edit y el delete
+5- editar el categoriacontroller save()
+6- editar los botones - los stilos

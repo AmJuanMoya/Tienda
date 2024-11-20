@@ -1,0 +1,15 @@
+Editar producto
+1) productoControles incluimos una vista ( la misma vista de crear)
+ si doy click en editar me carga el formulario de crear
+ - creamos una variable editar = true
+
+2)en el formulario crear, hacer la condicion if(isset($edit))
+3) cambiar la accion del formulario para que sirva para ambos
+	 <?php $url_action =base_url."producto/edit&id="; ?>
+	 <?php $url_action =base_url."producto/crear"; ?>
+4) ahora en el formulario de editar cargamos la informacion del 
+	producto.
+	para eso en el modelo creamos un nuevo método 
+	getOne() y devuelve el producto
+5) en el controlador..
+

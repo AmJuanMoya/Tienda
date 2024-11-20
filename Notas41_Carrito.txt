@@ -1,0 +1,35 @@
+Nota41_carrito de compras
+1)carritoControler
+	function add, remove, delete
+
+2)Ver producto
+	
+3)Aumentar las unidades del carrito
+	carritoController 
+4)listar elementos del carrito
+	carritoController ---index
+	crear un tabla con los elementos
+
+5)crear en index y en style class="img_carrito"
+
+---
+6) listar elementos carrito
+	- carritoControler en index
+7) crear los campos nombre, precio y unidades
+8) styles arreglar la table
+9) sidebar agregar carrito
+
+10) estadistica del carito
+	contar productos
+	sumar total
+11) copiar de ver el codigo de comprar
+	-destacados
+	-categoria ver
+12) en el carrito mostar el total
+
+13) estilos total y boton pedido
+
+
+
+
+

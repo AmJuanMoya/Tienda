@@ -1,0 +1,12 @@
+Notas39_VerProducto
+1) productoController
+	- public function ver()"copiamos lo que tenemos en
+	editar
+	-creamos una vista (ver)
+2)en productos destacados colocamos como link a todo el producto
+3)cambiar el color del link y del hover
+4)reemplazar el bucle de productos/destacados en categoria/ver
+
+5) en producto/ver
+	 <div id="detail-product">
+ 

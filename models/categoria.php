@@ -32,8 +32,6 @@
         public function getAll(){
             $categorias = $this->db->query("SELECT * FROM t_categorias ORDER BY id_categoria DESC;");
             return $categorias;
-
-           
         }
 
         
@@ -44,9 +42,6 @@
         
         public function save(){
             $sql = "INSERT INTO t_categorias VALUES(NULL, '{$this->getNombre()}');" ;      
-            
-    
-    
             $save = $this->db->query($sql);
     
             

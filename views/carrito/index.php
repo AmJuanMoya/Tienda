@@ -9,9 +9,9 @@
     </tr>
     <?php 
         foreach($carrito as $indice =>$elemento): 
-        $producto = $elemento['producto'];
+            $producto = $elemento['producto'];
     ?>
-    <tr>
+   <tr>
         <td>
             <?php if ($producto->imagen != null): ?>
                 <img src="<?= base_url ?>uploads/images/<?= $producto->imagen ?>" class="img_carrito"/>
@@ -20,7 +20,9 @@
             <?php endif; ?>
         </td>
         <td>
-            <?=$producto->nombre_producto?>
+            <!-- <?=$producto->nombre_producto?> -->
+            <a href="<?=base_url?>producto/ver&id=<?=$producto->id_producto?>"><?=$producto->nombre_producto?></a>
+       
         </td>
         <td>
             <?=$producto->precio?>
@@ -35,35 +37,11 @@
 
 <br/>
 
-<?php $stats = Utils::stadisticCarrito();?>
+<div class="total-carrito">
+    <?php $stats = Utils:: stadisticCarrito(); ?>
+    <h3>Precio total: $<?=$stats['total']?></h3>
+    <a href="<?=base_url?>pedido/hacer" class="button button-pedido">Hacer pedido</a>
 
-<div class="tot">
-
-<h3>Precio total:$ <?=$stats['total']?></h3>
-<a href= "<?=base_url?>pedido/hacer" class="button">Hacer pedido</a>
 
 </div>
 
-
-
-
-
-<style>
-
-.tot a{
-    background-color: #3498db;
-    width: 20%;
-    text-align: center;
-}
-
-
-.tot{
-    /* border: red 1px solid; */
-    display: flex;
-    padding:  20px;
-    justify-content:  space-between;
-}
-
-
-
-</style>

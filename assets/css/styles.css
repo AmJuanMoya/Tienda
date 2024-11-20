@@ -34,7 +34,7 @@ a:hover{
 table{
     text-align: center;
     width: 100%;
-    border: 1px solid #555;
+    border: 1px solid transparent;
 }
 
 td{
@@ -146,7 +146,7 @@ td{
 
 #lateral{
     width: 22%;
-    min-height: 600px;
+    min-height: 500px;
     float: left;
     margin-top: 20px;
     margin-left: 10px;
@@ -313,7 +313,7 @@ button{
 /*Central*/
 #central{
     width: 72%;
-    min-height: 600px;
+    min-height: 500px;
     float: right;
     border-left: 1px solid #ccc;
     box-shadow: -5px -1px 5px #ddd;
@@ -358,12 +358,12 @@ button{
 }
 
 
-
 .img_carrito{
     height: 80px;
     display: block;
     margin: 10px auto;
 }
+
 
 
 
@@ -431,8 +431,23 @@ button{
 }
 
 
-#header{
-    border: red 1px solid;
- 
- 
+/* Carrito */
+
+.total-carrito{
+    width: 320PX;
+    float: right;
+}
+
+
+.total-carrito h3{
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+
+
+.button-pedido{
+    display: block;
+    float: right;
+    width: 100px;
 }

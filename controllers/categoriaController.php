@@ -10,8 +10,6 @@ class categoriaController{
         $categoria = new Categoria();
         $categorias = $categoria->getAll();
 
-        
-
         require_once 'views/categoria/index.php';
     }
 
