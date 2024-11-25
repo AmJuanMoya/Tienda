@@ -57,8 +57,20 @@
     elseif(isset($_SESSION['pedido']) && $_SESSION['pedido'] != 'complete'): 
 ?>
 
-    <h1>Tu pedido NO ha confirmado!</h1>
+    <h1 class="no-confirm">Tu pedido NO ha confirmado!</h1>
 
 <?php
     endif; 
 ?>
+
+
+
+
+
+<style> 
+
+.no-confirm{
+    color: red
+}
+
+</style>

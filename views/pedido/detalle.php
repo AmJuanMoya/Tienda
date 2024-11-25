@@ -1,7 +1,7 @@
 <h1>Detalle del pedido</h1>
 
 <?php if(isset($pedido)): ?>
-    <?phpif(isset($_SESSION['admin'])): ?>
+    <?php if(isset($_SESSION['admin'])): ?>
     
 
 
@@ -14,7 +14,7 @@
             <option value="confirm">Pendiente</option>
             <option value="preparation">En preparacion</option>
             <option value="ready">Listo para enviar</option>
-             <option value="sended">Enviado</option>
+            <option value="sended">Enviado</option>
         </select>
         <input type="submit" value="Cambiar estado">
     </form>
@@ -68,7 +68,6 @@
 
 </table>
 
+    <?php endif; ?>
+
 <?php endif; ?>
-
-
-

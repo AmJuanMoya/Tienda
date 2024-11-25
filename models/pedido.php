@@ -15,7 +15,7 @@ class Pedido{
 
     public function __construct()
     {
-     $this->db = Database::connect(); 
+        $this->db = Database::connect(); 
     }
 
     function getId(){
@@ -105,6 +105,7 @@ class Pedido{
                 ."WHERE id_usuario = {$this->getUsuarioId()} ORDER BY id_pedido DESC LIMIT 1";
 
         $pedido = $this->db->query($sql);
+        // return $pedido;
         return $pedido->fetch_object();
     }
 
@@ -136,13 +137,18 @@ class Pedido{
     public function save(){
        
         $sql = "INSERT INTO t_pedidos VALUES(NULL, '{$this->getUsuarioId()}', '{$this->getCiudad()}', '{$this->getDireccion()}', {$this->getCosto()}, 'confirm',CURDATE() , CURTIME());";
+        // var_dump($sql);
+        // die();
+
         $save = $this->db->query($sql);
+       
        
         $result = false;
         if($save){
             $result = true;
         }
         return $result;
+
     }
 
     public function edit(){

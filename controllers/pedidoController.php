@@ -128,7 +128,7 @@ class pedidoController{
     
     public function estado(){
         utils::isAdmin();
-        if(isset($_POST['pedido_id']) && isset($_POST{'estado'})){
+        if(isset($_POST['pedido_id']) && isset($_POST['estado'])){
             $id = $_POST['pedido_id'];
             $estado = $_POST['estado'];
 
